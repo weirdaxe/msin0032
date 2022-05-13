@@ -22,7 +22,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 selections_list = ['12012', '20402', '20401', '6939', '6916', '20396', '15497', '16233', '15818', '20094', '15427', '15459', '12085', '2578', '6948', '205', '20309', '20104', '3221', '5082', '3224', '6785', '1278', '3564', '532', '8971', '25', '20181', '4576', '15272', '5324', '2766', '14056', '14057', '3781', '4001', '547', '15510', '15512', '8902', '16009', '3024', '16087', '3307', '2671', '270', '1817', '1814', '2699', '13986']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 # assume you have a "long-form" data frame see https://plotly.com/python/px-arguments/ for more options
 app.layout = \
     html.Div(className="web_app", children=[
